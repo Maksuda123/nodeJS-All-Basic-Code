@@ -33,7 +33,6 @@ module.exports = people;
 
 
 // Event emitter = event rase kora/event hoiyase
-const EventEmitter = require('events');
 const EventEmiter = require('events');
 // EventEmiter=class
 const emitter = new EventEmitter();
@@ -52,7 +51,6 @@ emitter.emit('bellRing');
 
 
 const EventEmitter = require('events');
-const EventEmiter = require('events');
 // EventEmiter=class
 const emitter = new EventEmitter();
 
@@ -65,9 +63,6 @@ emitter.on('bellRing', ()=>{
 emitter.emit('bellRing');
 
 
-emitter.on('bellRing', () => {
-    console.log('we need to run');
-});
 
 
 
@@ -144,7 +139,7 @@ setTimeout(() => {
 //Extending event
 //school.js
 const EventEmitter = require('events');
-class School extends EventEmitter {
+class School extends EventEmitter {//EventEmitter er shomoshto property ai khane chole ashce
     startPeriod() {
         console.log('class started');    
         // rase an event
@@ -157,6 +152,7 @@ class School extends EventEmitter {
     }
 }
 module.exports = School;
+//schoo.js purata ekta structure or blue print
 
 //index.js
 const School = require('./school');
